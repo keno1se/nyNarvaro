@@ -718,3 +718,27 @@ function promptSearch(){
 }  //end function
 
 
+
+  /*---------------------------------------------------------*/
+  /*--             - EMAILJS                               --*/
+  /*---------------------------------------------------------*/
+  /* EMAILJS,
+   * everytime someone clicks on tr2D2 (linkedIn)  - email sent to 
+   * my gmail
+   */
+    
+  //send email
+  // function can't be called emailjs
+tr2td2.onclick = function cenoSndEmail() {
+emailjs.send("default_service", "nynarvaroceno",{});
+
+};  //end emailJs function
+
+
+
+
+
+
+
+
+
