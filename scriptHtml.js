@@ -261,7 +261,7 @@ tr4td2.appendChild(kenoMic);
 var magnifier = document.createElement('DIV');
 //magnifier.setAttribute('class', 'navTop');
 magnifier.setAttribute('onclick', 'promptSearch()');
-var txt = document.createTextNode('\u{2315}');
+var txt = document.createTextNode('\u2315');
 magnifier.appendChild(txt);
   //nest magnifier into header
 header.appendChild(magnifier);
