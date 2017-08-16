@@ -73,7 +73,7 @@ header.appendChild(lexlog);
 */
 var ceno = document.createElement('DIV');
 ceno.setAttribute('onclick', 'contactCeno()');
-var txt = document.createTextNode('\u002263');
+var txt = document.createTextNode('\u2263');
 ceno.appendChild(txt);
   //nest ceno into header
 header.appendChild(ceno);
