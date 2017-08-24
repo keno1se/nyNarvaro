@@ -72,9 +72,16 @@ header.appendChild(lexlog);
 /* DIV - ceno
 */
 var ceno = document.createElement('DIV');
+ceno.setAttribute('id', 'cenoDiv');
 ceno.setAttribute('onclick', 'contactCeno()');
-var txt = document.createTextNode('\u{2263}');
-ceno.appendChild(txt);
+
+var cenoMenyJpg = document.createElement('IMG');
+cenoMenyJpg.setAttribute('src', 'img/menyH24W25.jpg');
+cenoMenyJpg.setAttribute('width', '25');
+cenoMenyJpg.setAttribute('height', '24');
+cenoMenyJpg.setAttribute('alt', 'meny jpg img');
+ceno.appendChild(cenoMenyJpg);
+
   //nest ceno into header
 header.appendChild(ceno);
 
@@ -259,10 +266,16 @@ tr4td2.appendChild(kenoMic);
 /* DIV - magnifier
  */
 var magnifier = document.createElement('DIV');
-//magnifier.setAttribute('class', 'navTop');
 magnifier.setAttribute('onclick', 'promptSearch()');
-var txt = document.createTextNode('\u{2315}');
-magnifier.appendChild(txt);
+
+var magnifierJpg = document.createElement('IMG');
+magnifierJpg.setAttribute('src', 'img/magnH25xV25.jpg');
+magnifierJpg.setAttribute('width', '25');
+magnifierJpg.setAttribute('height', '25');
+magnifierJpg.setAttribute('alt', 'magnifier jpg img');
+
+magnifier.appendChild(magnifierJpg);
+
   //nest magnifier into header
 header.appendChild(magnifier);
 
