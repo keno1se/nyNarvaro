@@ -40,19 +40,21 @@ headerStyle.style.borderRadius = '5px';
    */
 ceno.style.width = '100px';
 ceno.style.height = '55px';  //create spece to inputContainerDiv
+ceno.style.marginLeft = '130px';  //aligen left of lexlog
+ceno.style.marginTop = '-35px';  //center cenoDiv with lexlog text
+ceno.style.cursor = 'pointer';   
 
-ceno.style.color = 'rgba(255, 255, 255, 1.0)';  //white
-ceno.style.fontSize = '30px';  //size '\u2263'
-ceno.style.paddingTop = '7px';  //center text with lexlog
-ceno.style.marginLeft = '130px';  //level with lexlog
-ceno.style.marginTop = '-50px';
+cenoMenyJpg.style.verticalAlign = 'middle';  //center IMG with cenoDiv
+
 
   /*----------------------------
    * SPAN - ceno
    */
 cenoSpan.style.fontSize = '20px';  //size ceno
 cenoSpan.style.color = 'rgba(0, 230, 0, 1.0)';  //green
-cenoSpan.style.marginLeft = '7px';  //dist to '\u2263'
+cenoSpan.style.marginLeft = '7px';  //dist to 'menyH24V25.jpg'
+cenoSpan.style.verticalAlign = 'middle';   //center cenoSpan with IMG
+
 
   /*----------------------------
    * TABLE - cenoTable
@@ -96,20 +98,21 @@ txtP.style.fontStyle = 'italic';
    /* DIV - magnifier
     */
 magnifier.style.width = '100px';
-magnifier.style.height = '55px';  //create spece to inputContainerDiv
-
-magnifier.style.color = 'rgba(255, 255, 255, 1.0)';  //white
-magnifier.style.fontSize = '30px';  //size '\u2315'
+magnifier.style.height = '45px';  //create spece to inputContainerDiv
 magnifier.style.paddingTop = '7px';  //center text with lexlog
 magnifier.style.marginLeft = '220px';  //dist to ceno
-magnifier.style.marginTop = '-60px';
+magnifier.style.marginTop = '-61px';  // center magnifier div with ceno div
+magnifier.style.cursor = 'pointer';   
+
+magnifierJpg.style.verticalAlign = 'middle';  //center IMG in magnifier div
 
   /*----------------------------
    * SPAN - magnifier
    */
 magnifierSpan.style.fontSize = '20px';  //size Search
 magnifierSpan.style.color = 'rgba(0, 230, 0, 1.0)';  //green
-magnifierSpan.style.marginLeft = '7px';  //dist to '\u2315'
+magnifierSpan.style.marginLeft = '7px';  //dist to 'magnH25xV25.jpg'
+magnifierSpan.style.verticalAlign = 'middle';  //center magnifierSpan with IMG
 
 
 
