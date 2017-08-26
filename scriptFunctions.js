@@ -466,6 +466,8 @@ mydiv.appendChild(rotout);
   //create back btn img    
 var backbtn = document.createElement('IMG');
 backbtn.setAttribute('onclick', 'rotateBack()');
+backbtn.setAttribute('onmouseover', 'btnMOve  r(this)');
+backbtn.setAttribute('onmouseout', 'btnMOut(this)'); 
 backbtn.setAttribute('src', 'img/backW69H30.jpg');
 backbtn.setAttribute('width', '69');
 backbtn.setAttribute('height', '30');
@@ -486,8 +488,9 @@ mydiv.appendChild(backbtn);
 
   //create Email btn img    
 var emailBtn = document.createElement('IMG');
-//downloadBtn.setAttribute('onclick', 'resetOutput()');
 emailBtn.setAttribute('src', 'img/emailW69H30.jpg');
+emailBtn.setAttribute('onmouseover', 'btnMOver(this)');
+emailBtn.setAttribute('onmouseout', 'btnMOut(this)');   
 emailBtn.setAttribute('width', '69');
 emailBtn.setAttribute('height', '30');
 emailBtn.setAttribute('alt', 'Email btn');
@@ -528,6 +531,8 @@ document.getElementById("mailBtn").addEventListener("click", sendMail);
     //Create download btn
 var downloadBtn = document.createElement('IMG');
 downloadBtn.setAttribute('src', 'img/dlW69H30.jpg');
+downloadBtn.setAttribute('onmouseover', 'btnMOver(this)');
+downloadBtn.setAttribute('onmouseout', 'btnMOut(this)');    
 downloadBtn.setAttribute('width', '69');
 downloadBtn.setAttribute('height', '30');
 downloadBtn.setAttribute('alt', 'Download btn');
@@ -791,6 +796,15 @@ function addMOut() {
 }
 
 
+  /*---------------------------
+   * - buttons
+   */
+function btnMOver(element) {
+    element.style.borderRadius = '15px';        
+}
+function btnMOut(element) {
+    element.style.borderRadius = '6px';        
+}
 
 
 
