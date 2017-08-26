@@ -453,6 +453,8 @@ var newMember3 = new StaticInput('Sonny Boy Williamson II', 'divSt6');
 
 var submitBtn = document.createElement('IMG');
 submitBtn.setAttribute('onclick', 'submit()');
+submitBtn.setAttribute('onmouseover', 'btnMOver(this)');
+submitBtn.setAttribute('onmouseout', 'btnMOut(this)');
 submitBtn.setAttribute('src', 'img/SubmitW69H30.jpg');
 submitBtn.setAttribute('width', '69');
 submitBtn.setAttribute('height', '30');
@@ -473,6 +475,8 @@ inputContainerDiv.appendChild(submitBtn);
 
 var resetInpBtn = document.createElement('IMG');
 resetInpBtn.setAttribute('onclick', 'resetInput()');
+resetInpBtn.setAttribute('onmouseover', 'btnMOver(this)');
+resetInpBtn.setAttribute('onmouseout', 'btnMOut(this)');
 resetInpBtn.setAttribute('src', 'img/resetInputW69H30.jpg');
 resetInpBtn.setAttribute('width', '69');
 resetInpBtn.setAttribute('height', '30');
