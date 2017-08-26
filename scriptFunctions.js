@@ -738,6 +738,58 @@ emailjs.send("default_service", "nynarvaroceno",{});
 
 
 
+  /*---------------------------------------------------------*/
+  /*--     MOUSEOVER, MOUSEOUT functions                   --*/
+  /*---------------------------------------------------------*/
+  /* In order to make the site more "alive"
+   * addEventListeners are used 
+   */
+
+  /*---------------------------
+   * - ceno
+   */
+ceno.addEventListener("mouseover", cenoMOver);
+ceno.addEventListener("mouseout", cenoMOut);
+
+function cenoMOver() {
+    cenoSpan.style.color = 'rgba(255, 255, 255, 1.0)';  //white
+}
+function cenoMOut() {
+    cenoSpan.style.color = 'rgba(0, 230, 0, 1.0)';  //green
+}
+
+
+  /*---------------------------
+   * - magnifier
+   */
+magnifier.addEventListener("mouseover", magnifierMOver);
+magnifier.addEventListener("mouseout", magnifierMOut);
+
+function magnifierMOver() {
+    magnifierSpan.style.color = 'rgba(255, 255, 255, 1.0)';  //white
+}
+function magnifierMOut() {
+    magnifierSpan.style.color = 'rgba(0, 230, 0, 1.0)';
+     //green
+}
+
+
+  /*---------------------------
+   * - add
+   */
+addBtn.addEventListener("mouseover", addMOver);
+addBtn.addEventListener("mouseout", addMOut);
+
+function addMOver() {
+    spanAdd.style.background = 'rgba(102, 102, 102, 1.0)';  //dark grey
+    spanAdd.style.color = 'rgba(255, 255, 255, 1.0)';  //text color white
+}
+function addMOut() {
+      //normal
+    spanAdd.style.background = 'rgba(217, 217, 217, 1.0)';  //light grey
+    spanAdd.style.color = 'rgba(85, 85, 85, 1.0)';  //text color grey
+}
+
 
 
 
