@@ -191,17 +191,18 @@ input.style.borderRadius = '5px 0px 0px 5px';
 
 
   /*** SPAN    ***/
-var span = document.getElementsByClassName('addBtn')[0];
-span.style.width = '30px';
-span.style.height = '10px';
+var spanAdd = document.getElementsByClassName('addBtn')[0];
+spanAdd.style.width = '30px';
+spanAdd.style.height = '10px';
   //add space to form1
-span.style.padding = '10px';
+spanAdd.style.padding = '10px';
   //add btn float left after input
-span.style.cssFloat = 'left';
+spanAdd.style.cssFloat = 'left';
   //topLeft, topRight, bottomRight, bottomLeft
-span.style.borderRadius = '0px 5px 5px 0px';
-span.style.background = '#d9d9d9';
-span.style.color = '#555';  //text color grey
+spanAdd.style.borderRadius = '0px 5px 5px 0px';
+spanAdd.style.background = 'rgba(217, 217, 217, 1.0)';  //light grey
+spanAdd.style.color = 'rgba(85, 85, 85, 1.0)';  //text color grey
+spanAdd.style.cursor = 'pointer';   
 
 
 
