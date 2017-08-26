@@ -466,7 +466,7 @@ mydiv.appendChild(rotout);
   //create back btn img    
 var backbtn = document.createElement('IMG');
 backbtn.setAttribute('onclick', 'rotateBack()');
-backbtn.setAttribute('onmouseover', 'btnMOve  r(this)');
+backbtn.setAttribute('onmouseover', 'btnMOver(this)');
 backbtn.setAttribute('onmouseout', 'btnMOut(this)'); 
 backbtn.setAttribute('src', 'img/backW69H30.jpg');
 backbtn.setAttribute('width', '69');
