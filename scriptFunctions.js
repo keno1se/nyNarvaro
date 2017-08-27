@@ -38,6 +38,8 @@ for (var i = 0; i < close.length; i++) {
 /*-------------------------------------------------------------*/
 /*------ DYNAMIC add 'x' SPAN ---------------------------------*/
 /*-------------------------------------------------------------*/
+/* Everything in Dynamic is not set at relod
+ */
 
 // Create a new list item when clicking on the "Add" button
 function addElement() {
@@ -81,13 +83,29 @@ divdynamic.appendChild(span);
 var close = document.getElementsByClassName("close");
     
 for (var i = 0; i < close.length; i++) {
+    
+      // will remove when click on x
     close[i].onclick = function() {
         var parent = this.parentElement;
         while (parent.hasChildNodes()) {
             parent.removeChild(parent.firstChild);
         }  //end while       
         }  //end function
-}  //end for  
+    
+     // for every new x - pointer
+    close[i].style.cursor = 'pointer';    
+    
+      // for every new x - add mouse over,out events
+    close[i].addEventListener("mouseover", function(event) {
+    event.target.style.fontSize = '20px';                          
+    event.target.style.fontWeight = 'bold';
+    });
+
+    close[i].addEventListener("mouseout", function(event) {
+    event.target.style.fontSize = 'initial';
+    });
+    
+}  //end for 
     
 }  //end addElement function
 
@@ -808,4 +826,16 @@ function btnMOut(element) {
 }
 
 
+  /*---------------------------
+   * - closing X - add - Dynamic
+   */
+for (var i = 0; i < close.length; i++) {
+    close[i].addEventListener("mouseover", function(event) {
+    event.target.style.fontSize = '20px';                          
+    event.target.style.fontWeight = 'bold';                         });
 
+    close[i].addEventListener("mouseout", function(event) {
+    event.target.style.fontSize = 'initial';
+    });
+
+}  //end for
