@@ -425,8 +425,8 @@ var br = document.createElement("BR");
 /*-------------------------------------------------------*/
 /*-------------------------------------------------------*/
   /*** new var for each new input to be static ***/
-var newMember0 = new StaticInput('Håkan Ehn', 'divSt1');
-var newMember1 = new StaticInput('David Barrett', 'divSt2');
+var newMember0 = new StaticInput('David Barrett', 'divSt1');
+var newMember1 = new StaticInput('Håkan Ehn', 'divSt2');
 var newMember2 = new StaticInput('Charlie McCoy', 'divSt3');
 var newMember3 = new StaticInput('Sonny Boy Williamson I', 'divSt5');
 var newMember3 = new StaticInput('Sonny Boy Williamson II', 'divSt6');
